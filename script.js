@@ -25,6 +25,66 @@
     "contador-proyectos-galeria"
   );
 
+  // ----- Switch de tema claro/oscuro -----
+  const switchTema = document.getElementById("switch-tema");
+  const consultaTemaOscuro = window.matchMedia("(prefers-color-scheme: dark)");
+
+  function temaGuardado() {
+    try {
+      const tema = localStorage.getItem("tema");
+      return tema === "oscuro" || tema === "claro" ? tema : null;
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function aplicarTema(tema) {
+    document.documentElement.dataset.tema = tema;
+
+    if (switchTema) {
+      const esOscuro = tema === "oscuro";
+      switchTema.setAttribute("aria-checked", String(esOscuro));
+      switchTema.setAttribute(
+        "aria-label",
+        esOscuro ? "Activar modo claro" : "Activar modo oscuro"
+      );
+    }
+  }
+
+  function inicializarTema() {
+    const guardado = temaGuardado();
+    aplicarTema(
+      guardado || (consultaTemaOscuro.matches ? "oscuro" : "claro")
+    );
+
+    if (switchTema) {
+      switchTema.addEventListener("click", () => {
+        const nuevoTema =
+          document.documentElement.dataset.tema === "oscuro"
+            ? "claro"
+            : "oscuro";
+
+        try {
+          localStorage.setItem("tema", nuevoTema);
+        } catch (error) {}
+
+        aplicarTema(nuevoTema);
+      });
+    }
+
+    const alCambiarSistema = (evento) => {
+      if (!temaGuardado()) {
+        aplicarTema(evento.matches ? "oscuro" : "claro");
+      }
+    };
+
+    if (typeof consultaTemaOscuro.addEventListener === "function") {
+      consultaTemaOscuro.addEventListener("change", alCambiarSistema);
+    } else if (typeof consultaTemaOscuro.addListener === "function") {
+      consultaTemaOscuro.addListener(alCambiarSistema);
+    }
+  }
+
   // -----------------------------------------------------------------
   //  Render de las cartas de proyecto
   // -----------------------------------------------------------------
@@ -82,8 +142,10 @@
       }
 
       // Botón de enlace
-      const botonEnlace = carta.querySelector(".boton-enlace");
-      const botonPendiente = carta.querySelector(".boton-pendiente");
+      const botonEnlace = carta.querySelector(".boton-enlace:not(.boton-presentacion)");
+      const botonPendiente = carta.querySelector(
+        ".boton-pendiente:not(.boton-pendiente--presentacion)"
+      );
 
       if (proyecto.enlace) {
         botonEnlace.href = proyecto.enlace;
@@ -95,6 +157,26 @@
       } else {
         botonEnlace.hidden = true;
         botonPendiente.hidden = false;
+      }
+
+      // Botón de presentación
+      const botonPresentacion = carta.querySelector(".boton-presentacion");
+      const presentacionPendiente = carta.querySelector(
+        ".boton-pendiente--presentacion"
+      );
+
+      if (proyecto.presentacion) {
+        botonPresentacion.href = proyecto.presentacion;
+        botonPresentacion.target = esExterno(proyecto.presentacion)
+          ? "_blank"
+          : "_self";
+        botonPresentacion.rel = esExterno(proyecto.presentacion)
+          ? "noopener noreferrer"
+          : "";
+        presentacionPendiente.hidden = true;
+      } else {
+        botonPresentacion.hidden = true;
+        presentacionPendiente.hidden = false;
       }
 
       galeria.appendChild(carta);
@@ -141,6 +223,7 @@
   //  Inicialización según el hash de la URL al cargar
   // -----------------------------------------------------------------
   function inicializar() {
+    inicializarTema();
     renderCartas();
 
     const hash = window.location.hash;
