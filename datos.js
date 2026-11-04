@@ -63,7 +63,7 @@ const proyectos = [
     integrantes: "Mateo Vives · Jeremías Schmeigel",
     descripcion:
       "Cronograma descriptivo con todas las actividades realizadas para la Muestra Anual del 2026 del Colegio Schönthal. Tiene soporte para idiomas Español y Coreano.",
-    imagen: "img/5A/cronograma.png",
+    imagen: "img/5A/cronograma.PNG",
     enlace: "https://lucas-de-la-pena-schonthal.github.io/cronograma-muestra-2026/",
     presentacion: "",
   },
@@ -149,7 +149,7 @@ const proyectos4C = [
     integrantes: "Asma Alashkar · Clarissa Mastricola · Maria Jose Albamonte",
     descripcion:
       "En esta página hicimos un análisis de los cuatro álbumes de Olivia Rodrigo junto con otras canciones que sacó y una biografía de su vida y carrera artística.",
-    imagen: "img/4C/olivia.png",
+    imagen: "img/4C/olivia.PNG",
     enlace: "https://amariaalbamonte-cloud.github.io/Olivia-Rodrigo-an-lisis-y-biograf-a/",
   },
   {
