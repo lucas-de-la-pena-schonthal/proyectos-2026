@@ -16,14 +16,23 @@
   const botonesNavegacion = document.querySelectorAll("[data-vista]");
 
   // ----- Contenedor de las cartas -----
-  const galeria = document.getElementById("galeria");
+  const galerias = {
+    "5toA": document.getElementById("galeria"),
+    "4toC": document.getElementById("galeria-4toC"),
+  };
   const plantillaCarta = document.getElementById("plantilla-carta");
 
   // ----- Contadores de proyectos -----
-  const contadorInicio = document.getElementById("contador-proyectos");
-  const contadorGaleria = document.getElementById(
-    "contador-proyectos-galeria"
-  );
+  const contadores = {
+    "5toA": [
+      document.getElementById("contador-proyectos"),
+      document.getElementById("contador-proyectos-galeria"),
+    ],
+    "4toC": [
+      document.getElementById("contador-proyectos-4toC"),
+      document.getElementById("contador-proyectos-galeria-4toC"),
+    ],
+  };
 
   // ----- Switch de tema claro/oscuro -----
   const switchTema = document.getElementById("switch-tema");
@@ -89,9 +98,19 @@
   //  Render de las cartas de proyecto
   // -----------------------------------------------------------------
   function renderCartas() {
-    const proyectos = window.proyectos || [];
+    renderGaleria("5toA", window.proyectos || [], "proyecto");
+    renderGaleria("4toC", window.proyectos4C || [], "proyecto4C", {
+      conPresentacion: false,
+    });
+  }
+
+  function renderGaleria(vista, proyectos, prefijoId, opciones = {}) {
+    const galeria = galerias[vista];
+    const conPresentacion = opciones.conPresentacion !== false;
 
     // Actualizar contadores
+    const contadorInicio = contadores[vista][0];
+    const contadorGaleria = contadores[vista][1];
     if (contadorInicio) contadorInicio.textContent = proyectos.length;
     if (contadorGaleria) contadorGaleria.textContent = proyectos.length;
 
@@ -103,9 +122,9 @@
       const numero = String(indice + 1).padStart(2, "0");
       const carta = plantillaCarta.content.cloneNode(true);
 
-      // id para enlaces internos (#proyecto-1, #proyecto-2, ...)
+      // id para enlaces internos (#proyecto-1, #proyecto4C-1, ...)
       const article = carta.querySelector(".carta");
-      article.id = `proyecto-${indice + 1}`;
+      article.id = `${prefijoId}-${indice + 1}`;
       article.style.animationDelay = `${Math.min(indice * 0.05, 0.4)}s`;
 
       // Número del proyecto
@@ -159,13 +178,13 @@
         botonPendiente.hidden = false;
       }
 
-      // Botón de presentación
+      // Botón de presentación (no se usa en 4to C)
       const botonPresentacion = carta.querySelector(".boton-presentacion");
       const presentacionPendiente = carta.querySelector(
         ".boton-pendiente--presentacion"
       );
 
-      if (proyecto.presentacion) {
+      if (conPresentacion && proyecto.presentacion) {
         botonPresentacion.href = proyecto.presentacion;
         botonPresentacion.target = esExterno(proyecto.presentacion)
           ? "_blank"
@@ -176,7 +195,9 @@
         presentacionPendiente.hidden = true;
       } else {
         botonPresentacion.hidden = true;
-        presentacionPendiente.hidden = false;
+        // La leyenda "Presentación pendiente" solo se muestra en las
+        // secciones que sí usan presentaciones (5to A).
+        presentacionPendiente.hidden = !conPresentacion;
       }
 
       galeria.appendChild(carta);
@@ -198,8 +219,12 @@
     });
     window.scrollTo({ top: 0, behavior: "auto" });
 
-    // Manejar enlaces internos a cartas (#proyecto-3, etc.)
-    if (vistaDestino === "5toA" && window.location.hash.startsWith("#proyecto-")) {
+    // Manejar enlaces internos a cartas (#proyecto-3, #proyecto4C-2, ...)
+    const prefijosCarta = { "5toA": "#proyecto-", "4toC": "#proyecto4C-" };
+    if (
+      vistaDestino !== "inicio" &&
+      window.location.hash.startsWith(prefijosCarta[vistaDestino] || "\u0000")
+    ) {
       const destino = document.getElementById(window.location.hash.slice(1));
       if (destino) {
         setTimeout(() => {
@@ -229,6 +254,8 @@
     const hash = window.location.hash;
     if (hash === "#4toC" || hash === "#5toA" || hash === "#inicio") {
       cambiarVista(hash.slice(1));
+    } else if (hash.startsWith("#proyecto4C-")) {
+      cambiarVista("4toC");
     } else if (hash.startsWith("#proyecto-")) {
       cambiarVista("5toA");
     }
