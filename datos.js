@@ -32,12 +32,12 @@
 
 const proyectos = [
   {
-    nombre: "MiauGau",
+    nombre: "MiauGuau",
     integrantes: "Ian Fuciños · Leandro Asenjo · Mateo Vives · Jeremías Schmeigel",
     descripcion:
       "Breve descripción del proyecto: de qué se trata, qué investigó o qué creó el grupo durante el año.",
     imagen: "img/5A/miaugau.png",
-    enlace: "",
+    enlace: "https://ianf.pythonanywhere.com/",
     presentacion: "",
   },
   {
