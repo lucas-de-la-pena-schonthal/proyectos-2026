@@ -35,10 +35,10 @@ const proyectos = [
     nombre: "MiauGuau",
     integrantes: "Ian Fuciños · Leandro Asenjo · Mateo Vives · Jeremías Schmeigel",
     descripcion:
-      "Breve descripción del proyecto: de qué se trata, qué investigó o qué creó el grupo durante el año.",
+      "Miauguau es un sitio web dedicado a promover y facilitar la adopción responsable de mascotas, actuando como puente entre animales rescatados que buscan un hogar y personas dispuestas a darles una segunda oportunidad. Nace con la convicción de que cada animal abandonado o maltratado merece una familia que lo cuide, lo quiera y lo integre como un miembro más del hogar.",
     imagen: "img/5A/miaugau.png",
     enlace: "https://ianf.pythonanywhere.com/",
-    presentacion: "",
+    presentacion: "https://docs.google.com/presentation/d/15zOaoiZKb5AxEZoYDf2vQ1N83Ocs611PELCibXyzTuE/edit?usp=sharing",
   },
   {
     nombre: "Donación de Sangre",
@@ -69,11 +69,11 @@ const proyectos = [
   },
   {
     nombre: "Matzip",
-    integrantes: "Integrante 1 · Integrante 2 · Integrante 3",
+    integrantes: "Valeria Kim · Eliana Lee · Karen Lee · Stella Yo",
     descripcion:
-      "Breve descripción del proyecto: de qué se trata, qué investigó o qué creó el grupo durante el año.",
-    imagen: "",
-    enlace: "",
+      "Matzip es un sitio web gastronómico dinámico e interactivo diseñado para simplificar la toma de decisiones al momento de salir a comer o pedir comida en la Ciudad Autónoma de Buenos Aires (CABA). Surge como respuesta a la sobreoferta de información y menús en internet, buscando reducir el tiempo de búsqueda a través de una interfaz clara, intuitiva y basada en mapas.",
+    imagen: "img/matzip.png",
+    enlace: "https://elianalee.pythonanywhere.com/",
     presentacion: "",
   },
   {
@@ -96,11 +96,11 @@ const proyectos = [
   },
   {
     nombre: "Adicciones Contemporáneas",
-    integrantes: "Integrante 1 · Integrante 2 · Integrante 3",
+    integrantes: "Emma Capretti · Anahi Carrizo · Jane Lee",
     descripcion:
-      "Breve descripción del proyecto: de qué se trata, qué investigó o qué creó el grupo durante el año.",
-    imagen: "",
-    enlace: "",
+      "Página web informativa dirigida a adolescentes y jóvenes que tiene como objetivo concientizar sobre esta gran problemática y enseñar cómo identificar a una persona adicta, como es el trasfondo del consumismo, qué factores de riesgo hay, Cómo se desarrolla, cómo afecta al vínculo social/laboral del individuo, recursos de ayuda (centros, líneas telefónicas, grupos de apoyo), cómo controlarlo y superarlo y promover hábitos saludables y prevención de recaídas.",
+    imagen: "img/adicciones.png",
+    enlace: "https://emmacapretti.pythonanywhere.com/",
     presentacion: "",
   },
   {
@@ -123,11 +123,11 @@ const proyectos = [
   },
   {
     nombre: "Mejora tus Estudios",
-    integrantes: "Integrante 1 · Integrante 2 · Integrante 3",
+    integrantes: "Yujra Melody · In Valeria · Chaina Melani",
     descripcion:
-      "Breve descripción del proyecto: de qué se trata, qué investigó o qué creó el grupo durante el año.",
-    imagen: "",
-    enlace: "",
+      "Mejora Tus Estudios es una plataforma web diseñada con el objetivo de centralizar herramientas de organización y técnicas de aprendizaje para optimizar el rendimiento académico de estudiantes de nivel primario y secundario. La plataforma busca resolver la desorganización y el estrés común que sufren los alumnos antes de los exámenes, ofreciendo métodos de estudio estructurados, calculadoras dinámicas para planificar el tiempo, ejercicios interactivos para el manejo de la ansiedad, un cuadro comparativo de las mejores herramientas digitales de apoyo y un muro comunitario para compartir consejos entre compañeros.",
+    imagen: "img/estudios.png",
+    enlace: "https://emmacapretti.pythonanywhere.com/",
     presentacion: "",
   },
 ];
