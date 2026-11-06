@@ -82,7 +82,7 @@ const proyectos = [
     descripcion:
       "Es un juego en primera persona tipo horror game. El lugar de los hechos es el mismo colegio donde entramos por la noche, sin embargo algo es raro el colegio se lo nota diferente, al poco tiempo nos encontramos con misteriosas criaturas de las cuales debemos sobrevivir.",
     imagen: "classdismissed.png",
-    enlace: "",
+    enlace: "https://ajoaquinmontano-09.github.io/classdismiside/",
     presentacion: "",
   },
   {
