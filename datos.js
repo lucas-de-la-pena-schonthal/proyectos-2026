@@ -72,7 +72,7 @@ const proyectos = [
     integrantes: "Valeria Kim · Eliana Lee · Karen Lee · Stella Yo",
     descripcion:
       "Matzip es un sitio web gastronómico dinámico e interactivo diseñado para simplificar la toma de decisiones al momento de salir a comer o pedir comida en la Ciudad Autónoma de Buenos Aires (CABA). Surge como respuesta a la sobreoferta de información y menús en internet, buscando reducir el tiempo de búsqueda a través de una interfaz clara, intuitiva y basada en mapas.",
-    imagen: "img/matzip.png",
+    imagen: "img/5A/matzip.png",
     enlace: "https://elianalee.pythonanywhere.com/",
     presentacion: "",
   },
@@ -99,7 +99,7 @@ const proyectos = [
     integrantes: "Emma Capretti · Anahi Carrizo · Jane Lee",
     descripcion:
       "Página web informativa dirigida a adolescentes y jóvenes que tiene como objetivo concientizar sobre esta gran problemática y enseñar cómo identificar a una persona adicta, como es el trasfondo del consumismo, qué factores de riesgo hay, Cómo se desarrolla, cómo afecta al vínculo social/laboral del individuo, recursos de ayuda (centros, líneas telefónicas, grupos de apoyo), cómo controlarlo y superarlo y promover hábitos saludables y prevención de recaídas.",
-    imagen: "img/adicciones.png",
+    imagen: "img/5A/adicciones.png",
     enlace: "https://emmacapretti.pythonanywhere.com/",
     presentacion: "",
   },
@@ -126,7 +126,7 @@ const proyectos = [
     integrantes: "Yujra Melody · In Valeria · Chaina Melani",
     descripcion:
       "Mejora Tus Estudios es una plataforma web diseñada con el objetivo de centralizar herramientas de organización y técnicas de aprendizaje para optimizar el rendimiento académico de estudiantes de nivel primario y secundario. La plataforma busca resolver la desorganización y el estrés común que sufren los alumnos antes de los exámenes, ofreciendo métodos de estudio estructurados, calculadoras dinámicas para planificar el tiempo, ejercicios interactivos para el manejo de la ansiedad, un cuadro comparativo de las mejores herramientas digitales de apoyo y un muro comunitario para compartir consejos entre compañeros.",
-    imagen: "img/estudios.png",
+    imagen: "img/5A/estudios.png",
     enlace: "https://emmacapretti.pythonanywhere.com/",
     presentacion: "",
   },
