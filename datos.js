@@ -177,11 +177,25 @@ const proyectos4C = [
     enlace: "https://amateopelagalli-wq.github.io/proyecto-TECN.-DE-LA-INFORMACION-EMMA-ZENOBI-Y-MATEO-PELAGALLI/",
   },
   {
+    nombre: "Casos sin Resolver",
+    integrantes: "Cata cuervo · Sofi Mortero",
+    descripcion: "La pagina contiene, en la parte princiipal el enlace en forma de boton hacia otras cuatro paginas que hablan  de temas similares. Cada pagina contiene un carrucel con imagenes y colores determinados. Tambien, titulos en cada una de ellas y una breve descripcion de cada caso que pusimos.",
+    imagen: "img/4C/Casos.PNG",
+    enlace: "https://acatalinacuervo-lab.github.io/Casos-sin-resolverr/",
+  },
+  {
+    nombre: "Transfer Market",
+    integrantes: "Tomas Park · Lorenzo Grillo",
+    descripcion: "En esta página podés ver los últimos fichajes del fútbol, con el club de origen, el nuevo club y lo que costó cada jugador. También hay un ranking con los 10 jugadores más valiosos del mundo y una sección para descubrir al jugador del día.",
+    imagen: "img/4C/transfer.png",
+    enlace: "https://tomas-park934.github.io/transfer.schonthal/",
+  },
+  {
     nombre: "Viajes",
     integrantes: "Federica Peruzzi",
     descripcion: "La página trata sobre los viajes, hay 5 partes con diferentes temáticas, entre ellas,destinos más baratos, más caros, mejor valorados para viajar con niños, etc. ",
     imagen: "img/4C/Fede.png",
-    enlace: "",
+    enlace: "https://github.com/afedericaperuzzi-code/Viajes",
   },
 ];
 
