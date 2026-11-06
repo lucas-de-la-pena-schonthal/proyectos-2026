@@ -78,20 +78,20 @@ const proyectos = [
   },
   {
     nombre: "Class Dismissed",
-    integrantes: "Integrante 1 · Integrante 2 · Integrante 3",
+    integrantes: "Matias Perez · Joaquin Montaño · Joel Rojas · Josue Huallpa",
     descripcion:
-      "Breve descripción del proyecto: de qué se trata, qué investigó o qué creó el grupo durante el año.",
-    imagen: "",
+      "Es un juego en primera persona tipo horror game. El lugar de los hechos es el mismo colegio donde entramos por la noche, sin embargo algo es raro el colegio se lo nota diferente, al poco tiempo nos encontramos con misteriosas criaturas de las cuales debemos sobrevivir.",
+    imagen: "classdismissed.png",
     enlace: "",
     presentacion: "",
   },
   {
     nombre: "Sanguis Ventura",
-    integrantes: "Integrante 1 · Integrante 2 · Integrante 3",
+    integrantes: "Franco Abalos · Agustin Alvarez · Ezequiel Bergel · Felipe Bosco",
     descripcion:
-      "Breve descripción del proyecto: de qué se trata, qué investigó o qué creó el grupo durante el año.",
-    imagen: "",
-    enlace: "",
+      "Sanguis Ventura coloca la relación rota entre Damo y Niso como motor central de la jugabilidad. Damo, ex estudiante de medicina, regresa a un hospital que distorsiona memorias y visiones de su pasado. La historia aborda amistad, expectativas y envidia, usando exploración, acertijos y combates para progresar la narrativa.",
+    imagen: "img/5A/sanguis.png",
+    enlace: "https://mclovinsch.github.io/Sanguis_Ventura/",
     presentacion: "",
   },
   {
@@ -105,11 +105,11 @@ const proyectos = [
   },
   {
     nombre: "Proyecto de Malvinas",
-    integrantes: "Integrante 1 · Integrante 2 · Integrante 3",
+    integrantes: "Joaquin Semchman · Thiago Ortiz · Facundo corredoira · Nehuen miñana",
     descripcion:
-      "Breve descripción del proyecto: de qué se trata, qué investigó o qué creó el grupo durante el año.",
-    imagen: "",
-    enlace: "",
+      "Este es un juego basado en el rol de una madre donde su hijo se va a la guerra de malvinas. Adentro de este proyecto vas a tener minijuegos y objetivos para completar.",
+    imagen: "img/5A/malvinas.png",
+    enlace: "https://athiagoortiz-byte.github.io/PROYECTO-DE-MALVINAS/",
     presentacion: "",
   },
   {
@@ -127,7 +127,7 @@ const proyectos = [
     descripcion:
       "Mejora Tus Estudios es una plataforma web diseñada con el objetivo de centralizar herramientas de organización y técnicas de aprendizaje para optimizar el rendimiento académico de estudiantes de nivel primario y secundario. La plataforma busca resolver la desorganización y el estrés común que sufren los alumnos antes de los exámenes, ofreciendo métodos de estudio estructurados, calculadoras dinámicas para planificar el tiempo, ejercicios interactivos para el manejo de la ansiedad, un cuadro comparativo de las mejores herramientas digitales de apoyo y un muro comunitario para compartir consejos entre compañeros.",
     imagen: "img/5A/estudios.png",
-    enlace: "https://emmacapretti.pythonanywhere.com/",
+    enlace: "https://mvm04142.pythonanywhere.com/",
     presentacion: "",
   },
 ];
