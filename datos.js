@@ -74,7 +74,7 @@ const proyectos = [
       "Matzip es un sitio web gastronómico dinámico e interactivo diseñado para simplificar la toma de decisiones al momento de salir a comer o pedir comida en la Ciudad Autónoma de Buenos Aires (CABA). Surge como respuesta a la sobreoferta de información y menús en internet, buscando reducir el tiempo de búsqueda a través de una interfaz clara, intuitiva y basada en mapas.",
     imagen: "img/5A/matzip.png",
     enlace: "https://elianalee.pythonanywhere.com/",
-    presentacion: "",
+    presentacion: "https://www.canva.com/design/DAHaI3WKuEY/6BFmTnk90D5DiO2BZqWBlA/",
   },
   {
     nombre: "Class Dismissed",
@@ -128,7 +128,7 @@ const proyectos = [
       "Mejora Tus Estudios es una plataforma web diseñada con el objetivo de centralizar herramientas de organización y técnicas de aprendizaje para optimizar el rendimiento académico de estudiantes de nivel primario y secundario. La plataforma busca resolver la desorganización y el estrés común que sufren los alumnos antes de los exámenes, ofreciendo métodos de estudio estructurados, calculadoras dinámicas para planificar el tiempo, ejercicios interactivos para el manejo de la ansiedad, un cuadro comparativo de las mejores herramientas digitales de apoyo y un muro comunitario para compartir consejos entre compañeros.",
     imagen: "img/5A/estudios.png",
     enlace: "https://mvm04142.pythonanywhere.com/",
-    presentacion: "",
+    presentacion: "https://canva.link/dhb0vpdd7qwla7t",
   },
 ];
 
@@ -191,11 +191,18 @@ const proyectos4C = [
     enlace: "https://tomas-park934.github.io/transfer.schonthal/",
   },
   {
+    nombre: "Chismes Bardos",
+    integrantes: "Isabel Ferreyra · Rocio Santamaria",
+    descripcion: "Esta pagina se trata de distintos 'lores' / polémicas de famosos como, La Joaqui, Cazzu, Tini y Maru Botana",
+    imagen: "img/4C/chismes.png",
+    enlace: "https://aisabelferreyra-spec.github.io/chismes.bardos/",
+  },
+  {
     nombre: "Viajes",
     integrantes: "Federica Peruzzi",
     descripcion: "La página trata sobre los viajes, hay 5 partes con diferentes temáticas, entre ellas,destinos más baratos, más caros, mejor valorados para viajar con niños, etc. ",
     imagen: "img/4C/Fede.png",
-    enlace: "https://github.com/afedericaperuzzi-code/Viajes",
+    enlace: "",
   },
 ];
 
